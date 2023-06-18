@@ -1,7 +1,6 @@
 #include <stdio.h>
-/**
- * main - Entry point
- * Description: 'the program's description' 
+0;276;0c/**
+ * main - Entry point 
  * Return: Always 0 (Success)
  */
 int main(void)
@@ -13,5 +12,5 @@ putchar(i + 'a');
 i++;
 }
 putchar('\n');
-return 0;
+return (0);
 }
