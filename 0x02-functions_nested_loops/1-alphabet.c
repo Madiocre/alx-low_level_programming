@@ -4,8 +4,14 @@
  *
  * Return: Always 0.
  */
-int main(void)
+void print_alphabet(void)
 {
-print_alphabet();
-return (0);
+char s[] = "abcdefghijklmnopqrstuvwxyz";
+ int i = 0;
+int len = strlen(s);
+for(i = 0; i < len; i++)
+{
+_putchar(s[i]);
+}
+_putchar('\n');
 }
