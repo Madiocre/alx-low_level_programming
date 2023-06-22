@@ -14,7 +14,8 @@ void print_putchar(char s[])
 Use 6 calls to _putchar to print '_putchar' 
 */
 int i = 0;
-for(i = 0; i < strlen(s); i++)
+int len = strlen(s);
+for(i = 0; i < len; i++)
 {
 _putchar(s[i]);
 }
