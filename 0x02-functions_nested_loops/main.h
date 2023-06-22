@@ -24,6 +24,7 @@ _putchar('\n');
 void print_alphabet()
 {
 char s[] = "abcdefghijklmnopqrstuvwxyz";
+ int i = 0;
 int len = strlen(s);
 for(i = 0; i < len; i++)
 {
