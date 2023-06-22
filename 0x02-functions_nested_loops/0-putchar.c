@@ -10,11 +10,6 @@
  */
 int main(void)
 {
-int i = 0;
-char s[] = "_putcha";
- for(i = 0; i < (int)strlen(s); i++)
-{
-_putchar(s[i]);
-}
+print_putchar();
 return (0);
 }
