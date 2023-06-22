@@ -9,9 +9,9 @@ int i = 0, j = 0;
 int len = strlen(s);
 for (i = 0; i < 10; i++)
 {
-for(j = 0; j < len; j++
+for(j = 0; j < len; j++)
 {
-_putchar(s[i]);
+_putchar(s[j]);
 }
 _putchar('\n');
 }
