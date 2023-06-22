@@ -21,7 +21,7 @@ _putchar('\n');
  * Print a newline after '_putchar'
  */
 }
-void print_alphabet()
+void print_alphabet(void)
 {
 char s[] = "abcdefghijklmnopqrstuvwxyz";
  int i = 0;
