@@ -10,9 +10,6 @@
 int _putchar(char c);
 void print_putchar(char s[])
 {
-/**
-Use 6 calls to _putchar to print '_putchar' 
-*/
 int i = 0;
 int len = strlen(s);
 for(i = 0; i < len; i++)
@@ -23,4 +20,14 @@ _putchar('\n');
 /**
  * Print a newline after '_putchar'
  */
+}
+void print_alphabet()
+{
+char s[] = "abcdefghijklmnopqrstuvwxyz";
+int len = strlen(s);
+for(i = 0; i < len; i++)
+{
+_putchar(s[i]);
+}
+_putchar('\n');  
 }
