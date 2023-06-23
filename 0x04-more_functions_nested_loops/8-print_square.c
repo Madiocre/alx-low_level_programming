@@ -1,3 +1,4 @@
+#include "main.h"
 
 /**
  * print_square - Prints a square in the terminal
