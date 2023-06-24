@@ -8,13 +8,13 @@ int main(void)
 {
 long int n = 612852475143;
 long int largest_prime = 2;
-
+long int i = 0;
 while (n % 2 == 0)
 {
 n /= 2;
 }
-
-for (long int i = 3; i <= sqrt(n); i += 2)
+ 
+for (i = 3; i <= sqrt(n); i += 2)
 {
 while (n % i == 0)
 {
