@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-long int n = 612852475143L;
+long int n = 612852475143;
 long int largest_prime = 2;
 
 while (n % 2 == 0)
