@@ -10,7 +10,7 @@ int len = 0;
 int i;
 char temp;
 
-len = _strlen(s);
+len = strlen(s);
 
 for (i = 0; i < len / 2; i++)
 {
