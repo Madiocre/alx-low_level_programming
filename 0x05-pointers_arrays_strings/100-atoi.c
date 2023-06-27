@@ -35,5 +35,5 @@ s++;
 break;
 }
 
-return (num * sign);
+return (num*sign);
 }
