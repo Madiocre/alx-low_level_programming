@@ -22,5 +22,5 @@ start_index = (len - 1) / 2 + 1;
 for (i = start_index; i < len; i++)
 putchar(*(str + i));
 
-putchar('\n'); 
+putchar('\n');
 }
