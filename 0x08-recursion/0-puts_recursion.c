@@ -6,9 +6,9 @@
 void _puts_recursion(char *s)
 {
 if (*s == '\0') {
-_putchar('\n');  // Print newline after the entire string is printed
+putchar('\n');  // Print newline after the entire string is printed
 return;
 }
-_putchar(*s);  // Print the current character
+putchar(*s);  // Print the current character
 _puts_recursion(s + 1);  // Call the function recursively with the next character
 }
