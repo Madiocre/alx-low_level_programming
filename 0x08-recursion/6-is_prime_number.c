@@ -13,7 +13,7 @@ return (1);
 if (n % divisor == 0)
 return (0);
 return (is_prime_helper(n, divisor + 1));
-} 
+}
 /**
  * is_prime_number - Checks if a number is a prime number.
  * @n: The number to check.
