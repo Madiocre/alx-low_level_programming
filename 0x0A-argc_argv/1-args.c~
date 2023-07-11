@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+/**
+ * main - Entry point of the program
+ * @argc: The number of command-line arguments provided
+ *
+ * Return: 0 on success
+ */
+int main(int argc)
+{
+  printf("%d\n", argc);
+  return (0);
+}
