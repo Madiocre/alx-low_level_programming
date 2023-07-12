@@ -31,7 +31,8 @@ concat_str = malloc((total_length + 1) * sizeof(char));
 if (concat_str == NULL)
 return (NULL);
 
-int k = 0;
+int k;
+k = 0;
 int l;
 for (l = 0; l < ac; l++)
 {
