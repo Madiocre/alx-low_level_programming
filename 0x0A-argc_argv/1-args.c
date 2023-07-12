@@ -9,7 +9,7 @@
  */
 int main(int argc, char *argv[])
 {
-if (*argv[0] != '\0')
+if (argv[0] != NULL)
 printf("%d\n", argc);
 return (0);
 }
