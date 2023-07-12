@@ -14,9 +14,9 @@ char *argstostr(int ac, char **av)
 int total_length = 0;
 int i, j, k = 0;
 char *concat_str;
- 
+
 if (ac == 0 || av == NULL)
-return NULL;
+return (NULL);
 
 for (i = 0; i < ac; i++)
 {
