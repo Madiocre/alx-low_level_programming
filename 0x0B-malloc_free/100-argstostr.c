@@ -26,7 +26,7 @@ while (av[i][j] != '\0')
 total_length++;
 j++;
 }
-total_length++; // Account for the newline character
+total_length++;
 }
 
 concat_str = malloc((total_length + 1) * sizeof(char));
