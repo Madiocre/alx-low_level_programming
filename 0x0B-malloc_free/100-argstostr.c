@@ -1,5 +1,4 @@
-#include <stdlib.h>
-#include <stdio.h>
+#include "main.h"
 
 /**
  * argstostr - Concatenates all the arguments of a program.
@@ -7,7 +6,8 @@
  * @av: An array of strings representing the arguments.
  *
  * Return: On success, returns a pointer to the concatenated string.
- *         It returns NULL if ac is 0 or av is NULL, or if memory allocation fails.
+ *         It returns NULL if ac is 0 or av is NULL,
+ *         or if memory allocation fails.
  */
 char *argstostr(int ac, char **av)
 {
