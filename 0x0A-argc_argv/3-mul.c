@@ -5,7 +5,8 @@
  * main - Entry point of the program.
  * @argc: The number of command-line arguments 
  *        (including the program name).
- * @argv: An array of strings representing the command-line arguments.
+ * @argv: An array of strings representing 
+ *        the command-line arguments.
  *
  * Return: 0 on success.
  */
