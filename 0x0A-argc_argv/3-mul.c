@@ -4,7 +4,7 @@
 /**
  * main - Entry point of the program.
  * @argc: The number of command-line arguments.
- * @argv: An array of strings representing the command-line arguments.
+ * @argv: An array of strings command-line arguments.
  *
  * Return: (0) on success, or (1)
  *         if the program does not receive two arguments.
