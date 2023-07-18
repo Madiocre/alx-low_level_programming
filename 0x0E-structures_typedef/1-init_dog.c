@@ -4,9 +4,11 @@
 /**
  * init_dog - Initializes a struct dog with the given values.
  * @d: Pointer to the struct dog variable to initialize.
- * @name: Pointer to a character string representing the name of the dog.
+ * @name: Pointer to a character string representing
+ *        the name of the dog.
  * @age: Float value representing the age of the dog.
- * @owner: Pointer to a character string representing the owner of the dog.
+ * @owner: Pointer to a character string representing
+ *         the owner of the dog.
  *
  * Return: None (void).
  */
