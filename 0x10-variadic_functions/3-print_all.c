@@ -12,14 +12,13 @@
  */
 void print_all(const char * const format, ...)
 {
-	va_list args;
-	va_start(args, format);
 
-	int i = 0;
+	int i;
 	char c;
-	float f;
 	char *s;
 
+va_list args;
+va_start(args, format);
 	while (format && format[i])
 	{
 		switch (format[i])
