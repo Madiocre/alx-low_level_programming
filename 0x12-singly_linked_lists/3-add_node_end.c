@@ -29,6 +29,7 @@ new_node->next = NULL;
 
 if (*head == NULL)
 {
+new_node->len = strlen(str);
 *head = new_node;
 return (new_node);
 }
