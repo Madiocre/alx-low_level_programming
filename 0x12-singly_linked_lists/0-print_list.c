@@ -32,10 +32,10 @@ len = 5;
 
 for (i = 0; i < len; i++)
 {
-putchar(str[i]);
+_putchar(str[i]);
 }
 
-putchar('\n');
+_putchar('\n');
 
 current = current->next;
 count++;
