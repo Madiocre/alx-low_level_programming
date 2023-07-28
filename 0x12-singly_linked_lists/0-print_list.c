@@ -15,11 +15,11 @@ while (current != NULL)
 {
 if (current->str != NULL)
 {
-printf("[%d] %s\n", count, current->str);
+printf("[%ld] %s\n", count, current->str);
 }
 else
 {
-printf("[%d] (nil)\n", count);
+printf("[%ld] (nil)\n", count);
 }
 
 current = current->next;
