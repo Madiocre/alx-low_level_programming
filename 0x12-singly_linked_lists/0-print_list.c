@@ -11,11 +11,11 @@ const list_t *current = h;
 size_t count;
 count = 0;
 
-while(current != NULL)
+while (current != NULL)
 {
 if (current->str != NULL)
 {
-  printf("[%u] %s\n", current->len, current->str);
+printf("[%u] %s\n", current->len, current->str);
 }
 else
 {
