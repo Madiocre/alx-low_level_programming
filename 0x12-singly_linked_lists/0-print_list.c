@@ -9,18 +9,33 @@
 size_t print_list(const list_t *h)
 {
 const list_t *current = h;
-size_t count = 0;
+size_t count;
+size_t len;
+size_t i;
 
+count = 0;
 while (current != NULL)
 {
-if (current->str != NULL)
+const char *str = current->str;
+len = 0;
+
+if (str != NULL)
 {
-printf("[%ld] %s\n", count, current->str);
+while (str[len] != '\0')
+len++;
 }
 else
 {
-printf("[%ld] (nil)\n", count);
+str = "(nil)";
+len = 5;
 }
+
+for (i = 0; i < len; i++)
+{
+putchar(str[i]);
+}
+
+putchar('\n');
 
 current = current->next;
 count++;
