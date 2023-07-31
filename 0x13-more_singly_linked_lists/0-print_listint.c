@@ -15,9 +15,7 @@ count = 0;
 
 while (current != NULL)
 {
-
-printf("%u\n", current->n);
-
+printf("%d\n", current->n);
 current = current->next;
 count++;
 }
