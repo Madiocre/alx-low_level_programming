@@ -3,25 +3,21 @@
 #include <string.h>
 
 /**
- * add_node - Adds a new node at the beginning of a list_t linked list.
- * @head: Pointer to the head of the list.
- * @str: String to be duplicated and added to the new node.
- * Return: Address of the new element, or NULL if it failed.
+ * add_nodeint - Adds a new node at the beginning of a listint_t list.
+ * @head: A pointer to a pointer to the head of the list.
+ * @n: The value to be added to the new node.
+ *
+ * Return: The address of the new element, or NULL if it failed.
  */
+
 listint_t *add_nodeint(listint_t **head, const int n)
 {
 	listint_t *new_node = malloc(sizeof(listint_t));
+
 	if (new_node == NULL)
 		return (NULL);
 
-	new_node->str = strdup(str);
-	if (new_node->str == NULL)
-	{
-		free(new_node);
-		return (NULL);
-	}
-
-	new_node->len = strlen(str);
+	new_node->n = n;
 	new_node->next = *head;
 	*head = new_node;
 
