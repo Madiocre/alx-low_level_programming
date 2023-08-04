@@ -13,7 +13,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	unsigned long int xor;
 	unsigned int count;
 
-	xor = n^m;
+	xor = n ^ m;
 	count = 0;
 
 
@@ -22,6 +22,6 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 		count += xor & 1;
 		xor >>= 1;
 	}
-	
-	return(count);
+
+	return (count);
 }
