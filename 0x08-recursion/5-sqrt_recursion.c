@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * sqrt_helper - Helper function to perform the recursive calculation.
  * @n: The number to calculate the square root of.
@@ -7,9 +8,9 @@
  * Return: The natural square root of the number, or -1.
  */
 
-int sqrt_helper(int n, int start, int end)
+int sqrt_helper(long n, long start, long end)
 {
-	int mid;
+	long mid;
 
 	if (start > end)
 		return (-1);
