@@ -5,7 +5,7 @@
  * @b: The number of bytes to allocate.
  *
  * Return: On success, a pointer to the allocated memory.
- *         On failure, the function terminates the program 
+ *         On failure, the function terminates the program
  *         with exit status 98.
  */
 
