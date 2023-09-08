@@ -5,7 +5,7 @@
  * @nmemb: Used to check validity
  * @size: size of allocation
  *
- * Return: Return: On success, a pointer to the allocated memory.
+ * Return: On success, a pointer to the allocated memory.
  */
 
 void *_calloc(unsigned int nmemb, unsigned int size)
