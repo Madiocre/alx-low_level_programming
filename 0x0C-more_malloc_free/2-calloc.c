@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _calloc: Function that works like calloc
+ * _calloc - Function that works like calloc
  * @nmemb: Used to check validity
  * @size: size of allocation
  *
