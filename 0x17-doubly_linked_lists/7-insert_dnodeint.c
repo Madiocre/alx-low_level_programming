@@ -13,7 +13,7 @@ unsigned int count = 0;
 dlistint_t *temp;
 
 if (*h == NULL)
-return NULL;
+return (NULL);
 
 if (idx == 0)
 return add_dnodeint(h, n);
@@ -25,7 +25,7 @@ if (count == idx - 1)
 {
 dlistint_t *new_node = malloc(sizeof(dlistint_t));
 if (new_node == NULL)
-return NULL;
+return (NULL);
 new_node->n = n;
 new_node->prev = temp;
 new_node->next = temp->next;
@@ -38,5 +38,5 @@ temp = temp->next;
 count++;
 }
 
-return NULL;
+return (NULL);
 }
