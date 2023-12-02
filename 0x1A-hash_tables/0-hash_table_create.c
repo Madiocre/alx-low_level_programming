@@ -12,13 +12,13 @@ hash_table_t *new_table;
 
 new_table = malloc(sizeof(hash_table_t));
 if (!new_table)
-return NULL;
+return (NULL);
 new_table->array = calloc(size, sizeof(hash_node_t *));
 if (!new_table->array)
 {
 free(new_table);
-return NULL;
+return (NULL);
 }
 new_table->size = size;
-return new_table;
+return (new_table);
 }
