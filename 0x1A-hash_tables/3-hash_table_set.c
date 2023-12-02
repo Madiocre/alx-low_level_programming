@@ -1,5 +1,25 @@
 #include "hash_tables.h"
 /**
+ * create_node - creates a node item
+ * @key: key associated with the value
+ * @value: the value to be added
+ *
+ * Return: returns the new element created, NULL if failed
+ */
+hash_node_t *create_node(const char *key, const char *value)
+{
+hash_node_t *new_node;
+
+new_node = malloc(sizeof(hash_node_t));
+if (!new_node)
+return (NULL);
+new_node->key = strdup(key);
+new_node->value = strdup(value);
+new_node->next = NULL;
+
+return (new_node);
+}
+/**
  * hash_table_set - adds a new key/value pair to the hash table
  * @ht: the hash table you want to add or update the key/value to
  * @key: the key. key can't be an empty string
@@ -30,3 +50,4 @@ ht->array[index] = new_node;
 }
 return (1);
 }
+
