@@ -40,7 +40,7 @@ int jump_search(int *array, size_t size, int value)
 		prev = b;
 		b += (int)sqrt(size);
 		if (prev >= (int)size)
-			return (-1);
+			break;
 	} while (array[min_t(b, size) - 1] < value);
 	prev -= (int)sqrt(size);
 	if (prev < 0)
