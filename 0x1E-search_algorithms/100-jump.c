@@ -2,12 +2,15 @@
 
 /**
  * min - gets the min value
+ * @a: first int
+ * @b: second int
  *
  * Return: the lower of both values
  */
 
-int min(int a, int b){
-	if(b>a)
+int min_t(int a, int b)
+{
+	if (b > a)
 		return a;
 	else
 		return b;
@@ -30,18 +33,16 @@ int jump_search(int *array, size_t size, int value)
 	b = sqrt(size);
 	if (array == NULL)
 		return (-1);
-	do
-	{
+	do {
 		printf("Value checked array[%d] = [%d]\n", i, array[i]);
-		i = min(b, (int)size);
+		i = min_t(b, (int)size);
 
 		prev = b;
 		b += (int)sqrt(size);
 		if (prev >= (int)size)
 			return (-1);
 		
-	}
-	while (array[min(b, size)-1] < value);
+	} while (array[min_t(b, size)-1] < value);
 	prev -= (int)sqrt(size);
 	if (prev < 0)
 		prev = 0;
@@ -50,7 +51,7 @@ int jump_search(int *array, size_t size, int value)
 	{
 		printf("Value checked array[%d] = [%d]\n", prev, array[prev]);
 		prev += 1;
-		if ((int)prev == min(b, size))
+		if ((int)prev == min_t(b, size))
 			return (-1);
 	}
 	printf("Value checked array[%d] = [%d]\n", prev, array[prev]);
