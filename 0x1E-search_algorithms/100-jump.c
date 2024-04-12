@@ -1,7 +1,7 @@
 #include "search_algos.h"
 
 /**
- * min - gets the min value
+ * min_t - gets the min value
  * @a: first int
  * @b: second int
  *
@@ -11,9 +11,9 @@
 int min_t(int a, int b)
 {
 	if (b > a)
-		return a;
+		return (a);
 	else
-		return b;
+		return (b);
 }
 
 
@@ -41,7 +41,6 @@ int jump_search(int *array, size_t size, int value)
 		b += (int)sqrt(size);
 		if (prev >= (int)size)
 			return (-1);
-		
 	} while (array[min_t(b, size)-1] < value);
 	prev -= (int)sqrt(size);
 	if (prev < 0)
